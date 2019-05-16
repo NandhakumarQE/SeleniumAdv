@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="loans">
+  <test  name="SmokeTest">
+    <classes>
+    
+    <!-- Link all the class files with class tag here to execute testng.xml  -->
+
+    </classes>
+  </test> 
+</suite> 
