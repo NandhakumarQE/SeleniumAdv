@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
-
-  <!-- Link all the class files which are located in loans package under src/test/java -->
-  
-
+<suite name="Multiple Tests">
+  <test name="Arithmetic Operation Test">
+    <classes>
+       <class name="arithmeticOperation.Addition"/>
+       <class name="arithmeticOperation.Multiplication"/>
+       <class name="arithmeticOperation.Subtraction"/>
+    </classes>
+  </test> 
+</suite> 

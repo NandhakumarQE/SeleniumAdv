@@ -1,8 +1,9 @@
-/* Write JSON File With URL, Username, Password & Confirm Password */
-
-	URL	  : http://newtours.demoaut.com/
-	
+{
+	"URL" 	      : "http://newtours.demoaut.com/",
+	"UserID"   	  : "Prem@123",
+ 	"Password" 	  : "Test@123",
+	"ConPassword" : "Test12345"
 			
- 
+ }
   
   

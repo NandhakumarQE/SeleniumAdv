@@ -2,31 +2,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Loan">
   
-  <test name="CarLoan">
+  <test name="Addition">
     <classes>
-      <class name="loans.CarLoan"> 
+      <class name="arithmeticOperation.Addition"> 
       	<methods>
-      		<include name="TabLogIn"/>
+      		<include name="addMeth_1"/>
       	</methods>
       </class> 
     </classes>
   </test>
   
-  <test name="HomeLoan">
+  <test name="Multiplication">
     <classes>
-      <class name="loans.HomeLoan"> 
+      <class name="arithmeticOperation.Multiplication"> 
       	<methods>
-      		<exclude name="WebLogIn"/>
+      		<exclude name="multMeth_1"/>
       	</methods>
       </class> 
     </classes>
   </test>
   
-  <test name="PersonalLoan">
+  <test name="Subtraction">
     <classes>
-      <class name="loans.PersonalLoan"> 
+      <class name="arithmeticOperation.Subtraction"> 
       	<methods>
-      		<exclude name="Mobile.*"/>
+      		<exclude name="subMeth.*"/>
       	</methods>
       </class> 
     </classes>

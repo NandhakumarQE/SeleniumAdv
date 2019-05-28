@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="loans">
-  <test  name="SmokeTest">
+<suite name="Suite">
+  <test name="Arithmetic Operation Test">
     <classes>
-    
-    <!-- Link all the class files with class tag here to execute testng.xml  -->
-
+       <class name="arithmeticOperation.Addition"/>
+       <class name="arithmeticOperation.Multiplication"/>
+       <class name="arithmeticOperation.Subtraction"/>
+       <class name="arithmeticOperation.Division"/>
     </classes>
-  </test> 
-</suite> 
+  </test>
+</suite>
