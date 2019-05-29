@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class Division {
 
-	@Test (dependsOnMethods={"divMeth_2"})
+	@Test 
 	public void divMeth_1(){
 		
 		int a = 40;

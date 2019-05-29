@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class Addition {
 
-	@Test (enabled=false)
+	@Test 
 	public void addMeth_1(){
 		
 		int a = 10;
@@ -14,7 +14,7 @@ public class Addition {
 		System.out.println("Successfully Executed Add Method-1 & The Value is :"+ c);
 	}
 	
-	@Test (enabled=true)
+	@Test 
 	public void addMeth_2(){
 		
 		int a = 60;
@@ -23,7 +23,7 @@ public class Addition {
 		System.out.println("Successfully Executed Add Method-2 & The Value is :"+ c);
 	}
 	
-	@Test (enabled=false)
+	@Test 
 	public void addMeth_3(){
 		
 		int a = 40;

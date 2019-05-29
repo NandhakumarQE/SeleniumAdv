@@ -21,10 +21,12 @@ import org.testng.annotations.BeforeTest;
 
 public class LaunchBrowser {
 	
-    WebDriver driver;
-    Logger logger;
-    String url,userName,password,conPassword;
-    JSONParser parser=new JSONParser();
+	//	Pass the required Global Variables
+	
+    	
+    	Logger logger;
+   
+    	JSONParser parser=new JSONParser();
 	
 	  @BeforeTest
 	    public void setup() throws FileNotFoundException, IOException, ParseException 
@@ -32,17 +34,11 @@ public class LaunchBrowser {
 		  	logger = Logger.getLogger("GoogleSearch");
 			PropertyConfigurator.configure("Log4j.properties");
 		  
-	//  	System.setProperty("webdriver.chrome.driver", "//home/prem/Desktop/Selenium_Workspace/Driver/chromedriver");
+	//  	Write Json Parser & Json Object into the script
 			
-		  	Object obj = parser.parse(new FileReader("./Registration.json"));
-	        JSONObject jsonObject = (JSONObject) obj;
-	        
-	        url = (String) jsonObject.get("URL");
-	        userName = (String) jsonObject.get("UserID");
-	        password = (String) jsonObject.get("Password");
-	        conPassword = (String) jsonObject.get("ConPassword");
+
 	              
-	  //    driver = new ChromeDriver();
+	 //   PhantomJS Headless Driver
 	      	
 		  DesiredCapabilities caps = new DesiredCapabilities();
 		  caps.setJavascriptEnabled(true);
@@ -50,18 +46,18 @@ public class LaunchBrowser {
 		  driver = new PhantomJSDriver(caps);
 		  logger.info("PhantomJS Headless Driver launched");
 			  
-		  driver.get(url);
-	   	 
+		  driver.get();
+		  logger.info("URL has been launched");
 	    }
 	  
 	@Test
 	  public void Launch()  {
 	  
-     driver.findElement(By.linkText("REGISTER")).click();
-	 driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys(userName);
-	 driver.findElement(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[15]/td[2]/input")).sendKeys(password);
-	 driver.findElement(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[16]/td[2]/input")).sendKeys(conPassword);
-	 driver.findElement(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[18]/td/input")).click();
+     driver.findElement(By.).click();
+	 driver.findElement(By.).sendKeys(userName);
+	 driver.findElement(By.).sendKeys(password);
+	 driver.findElement(By.).sendKeys(conPassword);
+	 driver.findElement(By.).click();
 	 driver.quit();
 	 
 	}

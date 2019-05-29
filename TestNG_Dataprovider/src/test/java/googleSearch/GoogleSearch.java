@@ -22,11 +22,7 @@ public class GoogleSearch {
 	@BeforeTest
 	public void launch() {
 		
-		/*
-		 * System.setProperty("webdriver.chrome.driver",
-		 * "//home/prem/Desktop/Selenium_Workspace/Driver/chromedriver"); driver = new
-		 * ChromeDriver();
-		 */
+//		  PhantomJS Headless Driver
 		
 		  DesiredCapabilities caps = new DesiredCapabilities();
 		  caps.setJavascriptEnabled(true);
@@ -38,25 +34,24 @@ public class GoogleSearch {
 		  PropertyConfigurator.configure("Log4j.properties");
 	}
 	
-	@Test (dataProvider="getdata")
-	public void googleSearch (String search)  {
+// 		Write your Data Provider Annotations	
+	
+	@Test 
+	public void googleSearch ()  {
 
 		driver.get("https://google.com");
-		System.out.println("Navigated to the URL");
-		driver.findElement(By.name("q")).sendKeys(search);
-		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-		logger.info("We have successfully Searched for"+ search);
+		logger.info("Navigated to the URL");
+		driver.findElement(By.).sendKeys();
+		driver.findElement(By.).sendKeys();
+		logger.info("We have successfully Searched for"+ );
 	}
 
-
+// 	 Write your script inside getdata method with the repected keyword (Fresco Play, Fresco Apps, Ultimatix)
+	
 	@DataProvider
 	public  Object[][] getdata() {
 		
-		Object[][] data = new Object[3][1];
-		
-		data[0][0]="Fresco Play";
-		data[1][0]="Fresco Apps";
-		data[2][0]="Ultimatix";
+
 		
 		return data;
 	}

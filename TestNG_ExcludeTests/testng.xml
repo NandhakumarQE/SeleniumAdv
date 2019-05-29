@@ -1,35 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Loan">
-  
-  <test name="Addition">
-    <classes>
-      <class name="arithmeticOperation.Addition"> 
-      	<methods>
-      		<include name="addMeth_1"/>
-      	</methods>
-      </class> 
-    </classes>
-  </test>
-  
-  <test name="Multiplication">
-    <classes>
-      <class name="arithmeticOperation.Multiplication"> 
-      	<methods>
-      		<exclude name="multMeth_1"/>
-      	</methods>
-      </class> 
-    </classes>
-  </test>
-  
-  <test name="Subtraction">
-    <classes>
-      <class name="arithmeticOperation.Subtraction"> 
-      	<methods>
-      		<exclude name="subMeth.*"/>
-      	</methods>
-      </class> 
-    </classes>
-  </test>
+
+<!-- Write the testng.xml for all the Exclude Test Tags as mentioned -->
+
+
   
 </suite>

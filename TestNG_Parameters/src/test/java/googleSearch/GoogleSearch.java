@@ -24,28 +24,28 @@ public class GoogleSearch {
 		 logger =Logger.getLogger("GoogleSearch");
 		 PropertyConfigurator.configure("Log4j.properties");
 		  
-		/*
-		 * System.setProperty("webdriver.chrome.driver",
-		 * "//home/prem/Desktop/Selenium_Workspace/Driver/chromedriver"); driver = new
-		 * ChromeDriver();
-		 */
+// 		  PhantomJS Headless Driver
 		 
 		  DesiredCapabilities caps = new DesiredCapabilities();
 		  caps.setJavascriptEnabled(true);
 		  caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,"/home/prem/Desktop/Selenium_Workspace/Driver/phantomjs-2.1.1-linux-x86_64/bin/phantomjs"); 
 		  driver = new PhantomJSDriver(caps);
 		  logger.info("PhantomJS Headless Driver launched");
-		
-	
+
 	}
-	@Parameters({"URL","SearchText"})
+	
+// Write the Parameter tag and drive the values from testng.xml file and pass the value inside the methods
+	
 	@Test
-	public void googleSearch (String url,String searchText) throws InterruptedException {
-		driver.get(url);
+	public void googleSearch () throws InterruptedException {
+		driver.get();
 		Thread.sleep(5000);
 		logger.info("URL have been hitted");
-		driver.findElement(By.name("q")).sendKeys(searchText);
-		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		
+// Write the script for google search
+		
+		
+		
 		logger.info("Google Search has been done");
 		
 		

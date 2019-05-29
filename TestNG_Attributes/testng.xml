@@ -2,11 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Arithmetic Operation Test">
-    <classes>
-       <class name="arithmeticOperation.Addition"/>
-       <class name="arithmeticOperation.Multiplication"/>
-       <class name="arithmeticOperation.Subtraction"/>
-       <class name="arithmeticOperation.Division"/>
-    </classes>
+  <!-- Link your class files here -->
+  
+  
   </test>
 </suite>

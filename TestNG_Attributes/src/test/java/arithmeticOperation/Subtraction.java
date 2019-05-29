@@ -3,8 +3,8 @@ package arithmeticOperation;
 import org.testng.annotations.Test;
 
 public class Subtraction {
-
-	@Test (timeOut = 1000)
+	
+	@Test 
 	public void subMeth_1(){
 		
 		int a = 40;
